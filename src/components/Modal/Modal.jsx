@@ -27,12 +27,22 @@ export const Modal = ({ onClick, img }) => {
       onClick();
     }
   };
+  // handleKeyDown = e => {
+  //   if (e.code === 'Escape') {
+  //     this.props.onClick();
+  //   }
+  // };
 
   const handleBackdropClick = event => {
     if (event.currentTarget === event.target) {
       onClick();
     }
   };
+  //  handleBackdropClick = event => {
+  //    if (event.currentTarget === event.target) {
+  //      this.props.onClick();
+  //    }
+  //  };
 
   return createPortal(
     <ModalOverlay onClick={handleBackdropClick}>

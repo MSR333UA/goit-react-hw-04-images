@@ -30,8 +30,6 @@ export const App = () => {
     // this.setState(prevState => ({ page: prevState.page + 1 }));
   };
 
-  // const isFirstRenderRef = useRef(true);
-
   useEffect(() => {
     const loadImages = async () => {
       setIsLoading(true);
@@ -75,6 +73,11 @@ export const App = () => {
   const toggleModal = largeImageURL => {
     setBigImage(largeImageURL || '');
   };
+  // toggleModal = largeImageURL => {
+  //   this.setState(({ showModal, bigImage }) => ({
+  //     bigImage: largeImageURL,
+  //   }));
+  // };
 
   // const showModal = largeImageURL => {
   //   setBigImage(largeImageURL);

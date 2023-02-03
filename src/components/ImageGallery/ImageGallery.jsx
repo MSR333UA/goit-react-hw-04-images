@@ -6,8 +6,7 @@ import { useEffect, useRef } from 'react';
 
 export const ImageGallery = ({ images, onClick }) => {
   const listRef = useRef(true);
-
-  // useEffect(() => {});
+  //  listRef = createRef();
 
   useEffect(() => {
     const count = listRef?.current.children?.length;
@@ -35,7 +34,6 @@ export const ImageGallery = ({ images, onClick }) => {
   //     const list = this.listRef.current;
   //     return list.scrollHeight - list.scrollTop;
   //   }
-
   //   return null;
   // }
 
